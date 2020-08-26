@@ -141,14 +141,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/70-herolte.rules:system/halium/usr/lib/lxc-android-config/70-android.rules \
     $(LOCAL_PATH)/ubuntu/70-herolte.rules:system/halium/lib/udev/rules.d/70-android.rules
-
- #   $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
-    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
-    $(LOCAL_PATH)/ubuntu/init_setup_first_boot.sh:system/halium/var/lib/lxc/android/pre-start.d/init_setup_first_boot.sh \
+    $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/servicemanager.rc:system/etc/init/servicemanager.rc \
     $(LOCAL_PATH)/ubuntu/init_hcismd_up.sh:system/etc/init_hcismd_up.sh \
     $(LOCAL_PATH)/ubuntu/base:system/halium/etc/apparmor.d/abstractions/base \
     $(LOCAL_PATH)/ubuntu/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
+    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
+    $(LOCAL_PATH)/ubuntu/init_setup_first_boot.sh:system/halium/var/lib/lxc/android/pre-start.d/init_setup_first_boot.sh \
 
 ######## End Ubuntu Touch ##########
 
