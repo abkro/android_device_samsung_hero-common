@@ -66,7 +66,7 @@ TARGET_SCREEN_WIDTH := 1440
 ###########################################################
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/halium/etc/audio_policy.conf     
+    $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf     
 
 ###########################################################
 ### POWER
