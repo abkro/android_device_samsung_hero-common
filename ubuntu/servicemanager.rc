@@ -15,6 +15,7 @@ service servicemanager /system/bin/servicemanager
     onrestart restart miniaf
     onrestart restart minimedia
     onrestart restart minisf
+    onrestart restart sensors
     writepid /dev/cpuset/system-background/tasks
 
 service minimedia /system/bin/minimediaservice
@@ -34,4 +35,10 @@ service miniaf /system/bin/miniafservice
     class main
     user system
     group audio
+    
+service sensors /system/bin/sensorservice
+    class main
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
     
