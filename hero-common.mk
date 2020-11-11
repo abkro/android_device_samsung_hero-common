@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
 #####################
 ### Ubuntu Touch
 #####################
+# Aethercast
+PRODUCT_PROPERTY_OVERRIDES += \
+    ubuntu.widi.supported=1
 
 PRODUCT_PACKAGES += \
     libubuntu_application_api \
@@ -125,20 +128,19 @@ PRODUCT_PACKAGES += \
     libdroidmedia \
     libui_compat_layer \
     libsf_compat_layer \
+    minisfservice \
     minimediaservice \
     libminisf \
     libaudioflingerglue \
+    miniafservice \
     libcamera_compat_layer \
     libmedia_compat_layer 
-
-#   minisfservice \
-    miniafservice \
 
 # telepathy-ofono quirks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary \
     ro.t-o.quirk.forcesource=source.primary \
-    ril.device=samsung_msm_822x
+    ril.device=ril
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
@@ -154,7 +156,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
     $(LOCAL_PATH)/ubuntu/init_setup_first_boot.sh:system/halium/var/lib/lxc/android/pre-start.d/init_setup_first_boot.sh
 
-# Enable external display - aethercast
+
+# Enable external display
 PRODUCT_PROPERTY_OVERRIDES += \
     ubuntu.widi.supported=1
 
