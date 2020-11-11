@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	cm_charger_res_images
 
+
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(PLATFORM_PATH)/charger/images
 
 ###########################################################
