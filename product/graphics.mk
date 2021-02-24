@@ -1,7 +1,7 @@
 # Packages
 PRODUCT_PACKAGES += \
 	libion_exynos \
-	libfimg
+	libfimg 
 #	libion
 #	gralloc.exynos5
 

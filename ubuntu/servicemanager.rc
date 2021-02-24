@@ -23,7 +23,13 @@ service minimedia /system/bin/minimediaservice
     group audio camera
     ioprio rt 4
     # hacky workaround for video decoding
-    setenv LD_PRELOAD /system/lib/libOmxVdec.so
+    # setenv LD_PRELOAD /system/lib/libOmxVdec.so
+
+#   change own for camera preview lagging
+#   chown system system /sys/kernel/hmp/down_threshold
+
+#   set permission to 0660 for camera preview lagging
+#   chmod 0660 /sys/kernel/hmp/down_threshold
 
 service minisf /system/bin/minisfservice
     class main
